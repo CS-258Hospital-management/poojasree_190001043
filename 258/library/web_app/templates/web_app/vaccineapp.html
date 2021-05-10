@@ -1,0 +1,27 @@
+{% extends "web_app/userbase.html" %}
+{% load static %}
+
+{% block content %}
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>Vaccine Appointment</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="center">
+<form  action="vaccinefill">
+   <input type="text" size="100" placeholder="user id" name="uid" >
+    <input type="submit" padding='3x' value="User ID"><br><br>
+    <input type="text" size="100" placeholder="Date" name="appointment_date" >
+    <input type="submit" padding='3x' value="Appointment Date"><br><br>
+</form>
+
+</div>
+
+
+{% endblock content %}

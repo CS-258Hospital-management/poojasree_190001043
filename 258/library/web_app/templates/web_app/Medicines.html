@@ -1,0 +1,31 @@
+{% extends "web_app/userbase.html" %}
+{% load static %}
+
+{% block content %}
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>Medicines</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="center">
+
+  {% for medicine in medicines %}
+  <div class="books" style="background-color:white;border-radius:7px;margin:20px;padding:6px;">
+  <table>
+  <td style="padding:5px 30px;width:10vw;">
+  <h6>1)MedicineID:{{medicine.medicine_id}}<br>2)MedicineName:{{medicine.medicine_name}}<br>3)StockLeft:{{medicine.stock_left}}<br>4)LastUpdated:{{medicine.last_updated}}<br></h6>
+  </td>
+  </table>
+  </div>
+  {% endfor %}
+
+</div>
+
+
+{% endblock content %}

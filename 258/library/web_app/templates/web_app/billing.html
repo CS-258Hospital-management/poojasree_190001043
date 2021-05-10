@@ -1,0 +1,33 @@
+{% extends "web_app/adminbase.html" %}
+{% load static %}
+
+{% block content %}
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>billing edits</h2>
+                    <form  action="billing">
+                        <input type="text" size="100" placeholder="user id" name="userid">
+                        <br><br>
+                        <input type="text" size="100" placeholder="billing id" name="bill_id" >
+                        <br><br>
+                        <input type="text" size="100" placeholder=" amount" name="amount" >
+                        <br><br>
+                        <input type="date" size="100" placeholder="date" name="date" >
+                        <br><br>
+                        <input type="submit" padding='3x' value="enter"><br><br>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+{% endblock content %}

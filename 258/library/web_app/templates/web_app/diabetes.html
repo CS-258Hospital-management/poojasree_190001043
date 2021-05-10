@@ -1,0 +1,35 @@
+{% extends "web_app/userbase.html" %}
+{% load static %}
+
+{% block content %}
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>Diabetes Results</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="center">
+
+    {% for diabet in diabetes %}
+  <div class="books" style="background-color:white;border-radius:7px;margin:20px;padding:6px;">
+  <table>
+  <td style="padding:5px 30px;width:10vw;">
+  <h6>1)UserID:{{diabet.uid}}<br>2)TestID:{{diabet.testid}}<br>3)SugarLevel:{{diabet.sugar_level}}<br>4)PPSL:{{diabet.ppsl}}<br>5)InsulinLevel:{{diabet.insulin_level}}<br>6)TestDate:{{diabet.test_date}}</h6>
+  </td>
+  </table>
+  </div>
+  {% endfor %}
+
+
+    
+</table>
+
+</div>
+
+
+{% endblock content %}

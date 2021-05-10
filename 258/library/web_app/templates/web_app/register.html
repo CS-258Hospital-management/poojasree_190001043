@@ -1,0 +1,37 @@
+{% extends "web_app/adminlogin.html" %}
+    {% load static %}
+{% block content %}
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>check credentials if already existing user/ register if new</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+<div class="center">
+<!---- <div class="single-sidebar">-->
+   
+    <form  action="userregister">
+        <input type="text" size="100" placeholder="your name here" name="username" >
+        <input type="submit" padding='3x' value="your name"><br><br>
+        <input type="text" size="100" placeholder="your number here" name="mobilenum" >
+        <input type="submit" padding='3x' value="your mobilenumber"><br><br>
+        <input type="text" size="100" placeholder="your address here" name="address" >
+        <input type="submit" padding='3x' value="your address"><br><br>
+        <input type="text" size="100" placeholder="your email here" name="useremail" >
+        <input type="submit" padding='3x' value="your email"><br><br>
+        <input type="text" size="100" placeholder="password" name="password" >
+        <input type="submit" padding='3x' value="password here"><br><br>
+        
+    </form>
+<!----  </div>-->
+</div>
+
+
+{% endblock content %}

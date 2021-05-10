@@ -1,0 +1,35 @@
+{% extends "web_app/adminbase.html" %}
+{% load static %}
+
+{% block content %}
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>doctor profile edits</h2>
+                    <form  action="doctorprofile">
+                        <input type="text" size="100" placeholder="doctor id" name="did">
+                        <br><br>
+                        <input type="text" size="100" placeholder="doctor name" name="dname" >
+                        <br><br>
+                        <input type="text" size="100" placeholder=" Specialisation" name="specialisation" >
+                        <br><br>
+                        <input type="time" size="100" placeholder="available_from" name="available_from" >
+                        <br><br>
+                        <input type="time" size="100" placeholder="available_till" name="available_till" >
+                        <br><br>
+                        <input type="submit" padding='3x' value="Update"><br><br>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+{% endblock content %}

@@ -1,0 +1,35 @@
+{% extends "web_app/userbase.html" %}
+{% load static %}
+
+{% block content %}
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>Doctor profile</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="center">
+
+    {% for doctor in doctors %}
+  <div class="books" style="background-color:white;border-radius:7px;margin:20px;padding:6px;">
+  <table>
+  <td style="padding:5px 30px;width:10vw;">
+  <h6>1)DoctorID:{{doctor.did}}<br>2)DoctorName:{{doctor.dname}}<br>3)Specialisation:{{doctor.specialisation}}<br>4)Available From:{{doctor.available_from}}<br>5)Avaialable To:{{doctor.available_to}}</h6>
+  </td>
+  </table>
+  </div>
+  {% endfor %}
+
+
+    
+</table>
+
+</div>
+
+
+{% endblock content %}

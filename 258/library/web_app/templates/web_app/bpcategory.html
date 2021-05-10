@@ -1,0 +1,31 @@
+{% extends "web_app/adminbase.html" %}
+{% load static %}
+
+{% block content %}
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>bp test filling</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="center">
+<form  action="bpfill">
+   <input type="text" size="100" placeholder="user id" name="uid" >
+    <input type="submit" padding='3x' value="your userID"><br><br>
+    <input type="text" size="100" placeholder="test id" name="tid" >
+    <input type="submit" padding='3x' value="password here"><br><br>
+    <input type="text" size="100" placeholder="systolic pressure" name="systpres" >
+    <input type="submit" padding='3x' value="systolic pressurehere"><br><br>
+    <input type="text" size="100" placeholder="diastolic pressure" name="diapress" >
+    <input type="submit" padding='3x' value="diastolic pressure here"><br><br>
+</form>
+
+</div>
+
+
+{% endblock content %}

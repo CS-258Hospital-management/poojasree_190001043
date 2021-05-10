@@ -1,0 +1,35 @@
+{% extends "web_app/userbase.html" %}
+{% load static %}
+
+{% block content %}
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>BP Results</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="center">
+
+    {% for p in bp %}
+  <div class="books" style="background-color:white;border-radius:7px;margin:20px;padding:6px;">
+  <table>
+  <td style="padding:5px 30px;width:10vw;">
+  <h6>1)UserID:{{p.uid}}<br>2)TestID:{{p.testid}}<br>3)SystolicPressure:{{p.systolic_pressure}}<br>4)DiastolicPressure:{{p.diastolic_pressure}}<br>6)TestDate:{{p.test_date}}</h6>
+  </td>
+  </table>
+  </div>
+  {% endfor %}
+
+
+    
+</table>
+
+</div>
+
+
+{% endblock content %}

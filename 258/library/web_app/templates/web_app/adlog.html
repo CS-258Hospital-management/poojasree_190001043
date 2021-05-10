@@ -1,0 +1,27 @@
+{% extends "web_app/adminlogin.html" %}
+    {% load static %}
+{% block content %}
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+<div class="center">
+<!---- <div class="single-sidebar">-->
+   
+    <form  action="credfill">
+        <input type="text" size="100" placeholder="your email here" name="usemail" >
+        <input type="submit" padding='3x' value="your userID"><br><br>
+        <input type="text" size="100" placeholder="password" name="password" >
+        <input type="submit" padding='3x' value="password here"><br><br>
+        
+    </form>
+<!----  </div>-->
+</div>
+
+
+{% endblock content %}

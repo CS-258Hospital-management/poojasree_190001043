@@ -1,0 +1,33 @@
+{% extends "web_app/adminbase.html" %}
+{% load static %}
+
+{% block content %}
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>diabetes test filling</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="center">
+<form  action="sugarfill">
+   <input type="text" size="100" placeholder="user id" name="uid" >
+    <input type="submit" padding='3x' value="your userID"><br><br>
+    <input type="text" size="100" placeholder="test id" name="tid" >
+    <input type="submit" padding='3x' value="password here"><br><br>
+    <input type="text" size="100" placeholder="sugar levels" name="suglevel" >
+    <input type="submit" padding='3x' value="sugar levels here"><br><br>
+    <input type="text" size="100" placeholder="ppsl levels" name="ppsl" >
+    <input type="submit" padding='3x' value="ppsl levels here"><br><br>
+    <input type="text" size="100" placeholder="insulin levels" name="insulinlevels" >
+    <input type="submit" padding='3x' value="insulin levels here"><br><br>
+</form>
+
+</div>
+
+
+{% endblock content %}

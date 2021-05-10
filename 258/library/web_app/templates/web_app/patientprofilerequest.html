@@ -1,0 +1,47 @@
+{% extends "web_app/adminbase.html" %}
+{% load static %}
+
+{% block content %}
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <br>
+<div>
+
+                    <h2>requests for profile change</h2>
+                    <table style="width:100vw;">
+                        <tr>
+                        
+                        
+                          {% for request in requests %}
+                          <div class="requests" style="background-color:white;border-radius:7px;margin:20px;padding:6px;">
+                          <table>
+                          <td style="padding:5px 30px;width:10vw;">
+                          <h4>User ID : {{request.uid}}<br>Message : {{request.request_message}}<br></h4>
+                          <a href="{% url 'patientprofile' %}" style="font-size: 1cm;color: black;">Update</a>
+                          </td>
+                          </table>
+                          </div>
+                          {% endfor %}
+                        
+                        </div>
+                        </td>
+                        
+                        
+                        
+                        </tr>
+                        </table>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+{% endblock content %}

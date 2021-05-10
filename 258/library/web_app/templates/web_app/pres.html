@@ -1,0 +1,31 @@
+{% extends "web_app/adminbase.html" %}
+{% load static %}
+
+{% block content %}
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>adding prescriptions</h2>
+                    <form  action="pres">
+                        <input type="text" size="100" placeholder="Patient id" name="uid" >
+                        <br><br>
+                        <input type="text" size="150" placeholder="prescriptions" name="pres">
+                        <br><br>
+                        <input type="text" size="100" placeholder="doctor name" name="dname" >
+                        <br><br>
+                        <input type="date"  placeholder="date" name="date" ><br><br>
+                        <input type="submit" padding='3x' value="enter"><br><br>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+{% endblock content %}
